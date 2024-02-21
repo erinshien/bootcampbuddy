@@ -8,14 +8,40 @@
 </head>
 <body>
     <h1>Bootcamp Buddy</h1>
-    <select id="buddy-selector">
-        <option value="" selected disabled>Select your buddy</option>
-        <option value="buddy-erin">Erin</option>
-        <option value="buddy-rachel">Rachel</option>
-    </select>
-    <div class="image-container">
-        <img id="selected-buddy" src="">
-    </div>
+    <main>
+        <select id="buddy-selector">
+            <option value="" selected disabled>Select your buddy</option>
+            <option value="buddy-erin">Erin</option>
+            <option value="buddy-rachel">Rachel</option>
+        </select>
+        <div class="instructions">
+            <h3>Instructions</h3>
+            <p>1. Select a buddy from the dropdown menu</p>
+            <p>2. Tell them how you're feeling by clicking one of the faces below</p>
+        </div>
+        <div class="image-container">
+            <img id="selected-buddy" src="">
+        </div>
+        <p id="buddy-message"></p>
+        <div class="icons">
+            <button id="breakdown-button">
+                <img src="images/face_13552538.png">
+            </button>
+            <button id="sad-button">
+                <img src="images/face_13552501.png">
+            </button>
+            <button id="chill-button">
+                <img src="images/face_13553179.png">
+            </button>
+            <button id="happy-button">
+                <img src="images/face_13552586.png">
+            </button>
+            <p>I'm having a breakdown!</p>
+            <p>I'm feeling a little down...</p>
+            <p>I'm feeling pretty chill right now.</p>
+            <p>I'm feeling great, thanks for asking!</p>
+        </div>
+    </main>
     <script src="main.js"></script>
 </body>
 </html>
