@@ -9,37 +9,49 @@
 <body>
     <main>
         <h1>Bootcamp Buddy</h1>
-        <select id="buddy-selector">
-            <option value="" selected disabled>Select your buddy</option>
-            <option value="buddy-erin">Erin</option>
-            <option value="buddy-rachel">Rachel</option>
-        </select>
-        <div class="instructions">
-            <h3>Instructions</h3>
-            <p>1. Select a buddy from the dropdown menu</p>
-            <p>2. Tell them how you're feeling by clicking one of the faces below</p>
+        <div class="left-side">
+            <select id="buddy-selector">
+                <option value="" selected disabled>Select your buddy</option>
+                <option value="buddy-erin">Erin</option>
+                <option value="buddy-rachel">Rachel</option>
+            </select>
+            <div class="image-container">
+                <img id="selected-buddy" src="">
+            </div>
         </div>
-        <div class="image-container">
-            <img id="selected-buddy" src="">
-        </div>
-        <p id="buddy-message"></p>
-        <div class="icons">
-            <button class="button-icons" id="breakdown-button">
-                <img src="images/face_13552538.png" style="max-width: 80px">
-            </button>
-            <button id="sad-button">
-                <img src="images/face_13552501.png" style="max-width: 80px">
-            </button>
-            <button id="chill-button">
-                <img src="images/face_13552435.png" style="max-width: 80px">
-            </button>
-            <button id="happy-button">
-                <img src="images/face_13552586.png" style="max-width: 80px">
-            </button>
-            <p>I'm having a breakdown!</p>
-            <p>I'm not feeling so good...</p>
-            <p>I'm feeling pretty chill right now.</p>
-            <p>I'm feeling great, thanks for asking!</p>
+        <div class="right-side">
+            <div class="instructions">
+                <h3>Instructions</h3>
+                <p>1. Select a buddy from the dropdown menu</p>
+                <p>2. Tell them how you're feeling by clicking one of the faces below</p>
+            </div>
+            <p id="buddy-message">Your message will appear here!</p>
+            <div class="icons">
+                <div class="icon-container">
+                    <button class="button-icons" id="breakdown-button">
+                        <img src="images/face_13552538.png" style="max-width: 45px">
+                    </button>
+                    <p>I'm having a breakdown!</p>
+                </div>
+                <div class="icon-container">
+                    <button id="sad-button">
+                        <img src="images/face_13552501.png" style="max-width: 45px">
+                    </button>
+                    <p>I'm not feeling so good...</p>
+                </div>
+                <div class="icon-container">
+                    <button id="chill-button">
+                        <img src="images/face_13552435.png" style="max-width: 45px">
+                    </button>
+                    <p>I'm feeling pretty chill right now.</p>
+                </div>
+                <div class="icon-container">
+                    <button id="happy-button">
+                        <img src="images/face_13552586.png" style="max-width: 45px">
+                    </button>
+                    <p>I'm feeling great, thanks for asking!</p>
+                </div>
+            </div>
         </div>
     </main>
     <script src="main.js"></script>

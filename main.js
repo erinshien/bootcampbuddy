@@ -1,7 +1,7 @@
 const buddySelector = document.getElementById("buddy-selector");
 const selectedBuddy = document.getElementById("selected-buddy");
 
-selectedBuddy.src = "";
+selectedBuddy.src = "images/selectbuddy.png";
 
 buddySelector.addEventListener("change", function() {
 
